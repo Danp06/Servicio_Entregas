@@ -1,6 +1,4 @@
-
 package Taller;
-
 
 public class Package {
     public String id, description;
