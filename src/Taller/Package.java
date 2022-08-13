@@ -67,5 +67,7 @@ public class Package {
         return "Package{" + "id=" + id + ", description=" + description + ", code=" + code + ", gramsPrice=" + gramsPrice + ", basePrice=" + basePrice + ", weight=" + weight + '}';
     }
     
-    
+    public float calculate(float a, float b){
+        return a*b;
+    }
 }

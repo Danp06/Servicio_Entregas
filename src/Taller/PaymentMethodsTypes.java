@@ -1,5 +1,5 @@
 package Taller;
 
 public enum PaymentMethodsTypes {
-    NATURAL, LEGAL
+    CREDIT, DEBIT, TRANSFER, CASH
 }
