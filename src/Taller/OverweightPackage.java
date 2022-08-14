@@ -3,8 +3,8 @@ package Taller;
 public class OverweightPackage extends Package {
     public float overweight;
 
-    public OverweightPackage(String id, String description, int code, float gramsPrice, float basePrice, float weight) {
-        super(id, description, code, gramsPrice, basePrice, weight);
+    public OverweightPackage(String id, String description, int code, float gramsPrice, float basePrice, float weight, Customer customer) {
+        super(id, description, code, gramsPrice, basePrice, weight, customer);
     }
 
     public float getOverweight() {

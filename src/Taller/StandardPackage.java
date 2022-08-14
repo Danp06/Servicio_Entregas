@@ -3,10 +3,11 @@ package Taller;
 public class StandardPackage extends Package {
     public float quota;
 
-    public StandardPackage(String id, String description, int code, float gramsPrice, float basePrice, float weight) {
-        super(id, description, code, gramsPrice, basePrice, weight);
+    public StandardPackage(float quota, String id, String description, int code, float gramsPrice, float basePrice, float weight, Customer customer) {
+        super(id, description, code, gramsPrice, basePrice, weight, customer);
+        this.quota = quota;
     }
-
+    
     public float getQuota() {
         return quota;
     }
