@@ -1,7 +1,7 @@
 package Taller;
 
 
-public class Person {
+public abstract class Person {
     public String id, nationalId,idType, name, email, lastName;
     public Location location;
     public PersonType personType;
@@ -91,4 +91,5 @@ public class Person {
         
         return validated;
     }
+    
 }

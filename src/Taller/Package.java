@@ -1,6 +1,6 @@
 package Taller;
 
-public class Package {
+public abstract class Package {
     public String id, description;
     public int code;
     public float gramsPrice, basePrice, weight;
@@ -10,7 +10,7 @@ public class Package {
         this.id = id;
         this.description = description;
         this.code = code;
-        this.gramsPrice = gramsPrice;
+        this.gramsPrice = 1000*gramsPrice;
         this.basePrice = basePrice;
         this.weight = weight;
         this.customer = customer;

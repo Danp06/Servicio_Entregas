@@ -1,7 +1,5 @@
 package Taller;
 
-import java.beans.Customizer;
-
 public class Order {
     public String id;
     public Package packages;

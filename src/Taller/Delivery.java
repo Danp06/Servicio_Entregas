@@ -1,13 +1,13 @@
 package Taller;
 
 public class Delivery {
-    public Order order[];
+    public Order order;
     public DeliveryStatus status;
     public Track track;
     public Internal driver;
     public Position position;
 
-    public Delivery(Order[] order, DeliveryStatus status, Track track, Internal driver, Position position) {
+    public Delivery(Order order, DeliveryStatus status, Track track, Internal driver, Position position) {
         this.order = order;
         this.status = status;
         this.track = track;
@@ -15,11 +15,11 @@ public class Delivery {
         this.position = position;
     }
 
-    public Order[] getOrder() {
+    public Order getOrder() {
         return order;
     }
 
-    public void setOrder(Order[] order) {
+    public void setOrder(Order order) {
         this.order = order;
     }
 

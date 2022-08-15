@@ -24,7 +24,5 @@ public class StandardPackage extends Package {
     public float calculate(float a, float b, float c) {
         return (a*b)+c;
     }
-
-    
     
 }

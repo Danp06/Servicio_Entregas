@@ -4,12 +4,12 @@ package Taller;
 public class Invoice {
     public String id;
     public float tax, price, discoint;
-    public Order orders[];
+    public Order orders;
     public InvoiceStatus status;
     public Customer client;
     public PaymentMethodsTypes paymentMethod;
 
-    public Invoice(String id, float tax, float price, float discoint, Order[] orders, InvoiceStatus status, Customer client, PaymentMethodsTypes paymentMethod) {
+    public Invoice(String id, float tax, float price, float discoint, Order orders, InvoiceStatus status, Customer client, PaymentMethodsTypes paymentMethod) {
         this.id = id;
         this.tax = tax;
         this.price = price;
@@ -52,11 +52,11 @@ public class Invoice {
         this.discoint = discoint;
     }
 
-    public Order[] getOrders() {
+    public Order getOrders() {
         return orders;
     }
 
-    public void setOrders(Order[] orders) {
+    public void setOrders(Order orders) {
         this.orders = orders;
     }
 
