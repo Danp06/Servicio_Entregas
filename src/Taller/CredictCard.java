@@ -65,6 +65,10 @@ public class CredictCard {
         this.expetyDate = expetyDate;
     }
 
+    /**
+     * Metodo To string 
+     * @return un string con la informacion de la clase
+     */
     @Override
     public String toString() {
         return "CredictCard{" + "cvv=" + cvv + ", expiryYear=" + expiryYear + ", experyMonth=" + experyMonth + ", number=" + number + ", zipCode=" + zipCode + ", expetyDate=" + expetyDate + '}';

@@ -3,6 +3,11 @@ package Taller;
 import java.util.Scanner;
 
 class main {
+    
+    /**
+     * Metodos estaticos que sieven para crear listas de objetos 
+     */
+    
     final static int num = 100;
     static Scanner entrada = new Scanner(System.in);
     static Order orders[] = new Order[num];
@@ -10,11 +15,15 @@ class main {
     static Location locations[] = new Location[num];
     
     public static void main(String[] args) {
-        
-        //meñu
+        /**
+         * LLamado a metodo meñu
+         */
         menu();
     }
     
+    /**
+     * Metodo estatico que muestra el menu para enviar un paquete
+     */
     public static void menu(){
         int opcion=0;
         
@@ -38,6 +47,9 @@ class main {
             }while(opcion!=2);
     }
     
+    /**
+     * Metodo que sirve para enviar un paquete 
+     */
     public static void sendPackage(){
         StandardPackage pack = null;
         Location dir_a, dir_b;
@@ -47,6 +59,10 @@ class main {
         int k;
         float TotalPagar;
         
+        /**
+         * Aqui nosotros ingresamos los datos de la persona que va a emviar
+         * y de la persona que lo va a recibir por consola
+         */
         System.out.println("Ingresar los datos del remitente: ");
         entrada.nextLine();
         System.out.println("Identificacion: "); a = entrada.nextLine();
@@ -87,16 +103,31 @@ class main {
         locations[1] = dir_b;
         user_b = new Customer(null, locations[1], null, a, b, "CC", c, e, d, dir_b, PersonType.LEGAL);
         
+        /**
+         * Una vez ingresado los datos por consola se le agregar por medio del constructor de customer los datos
+         * 
+         * Se crea el paquete con unos datos ingresados de una vez en el constructor
+         */
+        
         pack = new StandardPackage(5500,"E0001", "Chancletas", 003145, (float) 7.5, 10000, (float) 2.5, user_a);
         TotalPagar = pack.calculate(pack.getGramsPrice(), pack.getWeight(),pack.getQuota());
         
+        /**
+         * Una vez creado el paquete se crea una orden con los datos de las personas, direcciones y paquetes involucrados
+         */
         Package OPack = (Package) pack;
         orders[0] = new Order("Or0001", OPack, true, TotalPagar, user_b, user_a, OrderStatus.PENDING,locations[0]);
         
         user_c = new Delivery(orders[0], DeliveryStatus.DRAFTED, null, null, null);
         
+        /**
+         * Y cuando se crea la orden se crea la factura que relacionan todas las clases mencionadas anteriormente
+         */
         invoices[0] = new Invoice("Inv0001", 0, TotalPagar, 0, orders[0], InvoiceStatus.SENT, user_a, PaymentMethodsTypes.CASH);
         
+        /**
+         * Se agregan las facturas a las personas y se muestra por consola un resumen de las operacions que se hicieron 
+         */
         user_a.setInvoices(invoices[0]);
         user_b.setInvoices(invoices[0]);
        

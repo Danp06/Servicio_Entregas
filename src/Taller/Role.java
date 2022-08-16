@@ -1,5 +1,23 @@
 package Taller;
 
+/**
+ * Una clase Enum para seleccional los Roles
+ * @author danie
+ */
 public enum Role {
-    ADMIN, USER, DRIVER
+
+    /**
+     * Este es el rol de Admin
+     */
+    ADMIN,
+
+    /**
+     * Este es el rol de Usuario
+     */
+    USER,
+
+    /**
+     * Este es el rol de Conductor/Transportador
+     */
+    DRIVER
 }
