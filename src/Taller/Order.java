@@ -1,6 +1,7 @@
 package Taller;
 
 public class Order {
+
     public String id;
     public Package packages;
     public boolean paid;
@@ -11,6 +12,7 @@ public class Order {
 
     /**
      * Metodo Constructor de la clase order recibe como parametro:
+     *
      * @param id
      * @param packages
      * @param paid
@@ -33,6 +35,7 @@ public class Order {
 
     /**
      * getter de id
+     *
      * @return id
      */
     public String getId() {
@@ -41,6 +44,7 @@ public class Order {
 
     /**
      * Setter del id recibe como parametro:
+     *
      * @param id
      */
     public void setId(String id) {
@@ -49,6 +53,7 @@ public class Order {
 
     /**
      * getter de packages
+     *
      * @return packages
      */
     public Package getPackages() {
@@ -57,6 +62,7 @@ public class Order {
 
     /**
      * Setter del packages recibe como parametro:
+     *
      * @param packages
      */
     public void setPackages(Package packages) {
@@ -64,7 +70,8 @@ public class Order {
     }
 
     /**
-     * getter  paid
+     * getter paid
+     *
      * @return paid
      */
     public boolean isPaid() {
@@ -73,6 +80,7 @@ public class Order {
 
     /**
      * Setter del paid recibe como parametro:
+     *
      * @param paid
      */
     public void setPaid(boolean paid) {
@@ -81,6 +89,7 @@ public class Order {
 
     /**
      * getter price
+     *
      * @return price
      */
     public float getPrice() {
@@ -89,6 +98,7 @@ public class Order {
 
     /**
      * Setter del price recibe como parametro:
+     *
      * @param price
      */
     public void setPrice(float price) {
@@ -97,6 +107,7 @@ public class Order {
 
     /**
      * getter de receiver
+     *
      * @return receiver
      */
     public Customer getReceiver() {
@@ -105,6 +116,7 @@ public class Order {
 
     /**
      * Setter del receiver recibe como parametro:
+     *
      * @param receiver
      */
     public void setReceiver(Customer receiver) {
@@ -113,6 +125,7 @@ public class Order {
 
     /**
      * getter de sender
+     *
      * @return sender
      */
     public Customer getSender() {
@@ -121,6 +134,7 @@ public class Order {
 
     /**
      * Setter del sender recibe como parametro:
+     *
      * @param sender
      */
     public void setSender(Customer sender) {
@@ -129,6 +143,7 @@ public class Order {
 
     /**
      * getter de status
+     *
      * @return status
      */
     public OrderStatus getStatus() {
@@ -137,6 +152,7 @@ public class Order {
 
     /**
      * Setter del status recibe como parametro:
+     *
      * @param status
      */
     public void setStatus(OrderStatus status) {
@@ -145,6 +161,7 @@ public class Order {
 
     /**
      * getter de location
+     *
      * @return location
      */
     public Location getLocation() {
@@ -153,6 +170,7 @@ public class Order {
 
     /**
      * Setter del location recibe como parametro:
+     *
      * @param location
      */
     public void setLocation(Location location) {
@@ -160,7 +178,8 @@ public class Order {
     }
 
     /**
-     * Metodo To string 
+     * Metodo To string
+     *
      * @return un string con la informacion de la clase
      */
     @Override

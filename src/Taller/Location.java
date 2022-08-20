@@ -1,11 +1,13 @@
 package Taller;
 
 public class Location {
+
     public String country, state, city, addressLine1, addressLine2;
     public int zipCode;
 
     /**
      * Metodo Constructor de la clase Location recibe como parametro:
+     *
      * @param country
      * @param state
      * @param city
@@ -24,6 +26,7 @@ public class Location {
 
     /**
      * getter de country
+     *
      * @return country
      */
     public String getCountry() {
@@ -32,6 +35,7 @@ public class Location {
 
     /**
      * Setter del country recibe como parametro:
+     *
      * @param country
      */
     public void setCountry(String country) {
@@ -40,6 +44,7 @@ public class Location {
 
     /**
      * getter de state
+     *
      * @return
      */
     public String getState() {
@@ -48,6 +53,7 @@ public class Location {
 
     /**
      * Setter del state recibe como parametro:
+     *
      * @param state
      */
     public void setState(String state) {
@@ -56,6 +62,7 @@ public class Location {
 
     /**
      * getter de city
+     *
      * @return city
      */
     public String getCity() {
@@ -64,6 +71,7 @@ public class Location {
 
     /**
      * Setter del city recibe como parametro:
+     *
      * @param city
      */
     public void setCity(String city) {
@@ -72,6 +80,7 @@ public class Location {
 
     /**
      * getter de addressLine1
+     *
      * @return addressLine1
      */
     public String getAddressLine1() {
@@ -80,6 +89,7 @@ public class Location {
 
     /**
      * Setter del addressLine1 recibe como parametro:
+     *
      * @param addressLine1
      */
     public void setAddressLine1(String addressLine1) {
@@ -88,6 +98,7 @@ public class Location {
 
     /**
      * getter de addressLine2
+     *
      * @return addressLine2
      */
     public String getAddressLine2() {
@@ -96,6 +107,7 @@ public class Location {
 
     /**
      * Setter del addressLine2 recibe como parametro:
+     *
      * @param addressLine2
      */
     public void setAddressLine2(String addressLine2) {
@@ -104,6 +116,7 @@ public class Location {
 
     /**
      * getter zipCode
+     *
      * @return zipCode
      */
     public int getZipCode() {
@@ -112,6 +125,7 @@ public class Location {
 
     /**
      * Setter del zipCode recibe como parametro:
+     *
      * @param zipCode
      */
     public void setZipCode(int zipCode) {
@@ -119,12 +133,13 @@ public class Location {
     }
 
     /**
-     * Metodo To string 
+     * Metodo To string
+     *
      * @return un string con la informacion de la clase
      */
     @Override
     public String toString() {
         return "Location{" + "country=" + country + ", state=" + state + ", city=" + city + ", addressLine1=" + addressLine1 + ", addressLine2=" + addressLine2 + ", zipCode=" + zipCode + '}';
     }
-    
+
 }

@@ -2,8 +2,8 @@ package Taller;
 
 import java.util.Date;
 
-
 public class CredictCard {
+
     public String cvv, expiryYear, experyMonth;
     public int number, zipCode;
     public Date expetyDate;
@@ -66,15 +66,16 @@ public class CredictCard {
     }
 
     /**
-     * Metodo To string 
+     * Metodo To string
+     *
      * @return un string con la informacion de la clase
      */
     @Override
     public String toString() {
         return "CredictCard{" + "cvv=" + cvv + ", expiryYear=" + expiryYear + ", experyMonth=" + experyMonth + ", number=" + number + ", zipCode=" + zipCode + ", expetyDate=" + expetyDate + '}';
     }
-    
-    public boolean validation(){
+
+    public boolean validation() {
         boolean validation = false;
         return validation;
     }

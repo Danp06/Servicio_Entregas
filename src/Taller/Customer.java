@@ -1,12 +1,15 @@
 package Taller;
 
 public class Customer extends Person {
+
     public Invoice invoices;
     public Location shipping;
     private CredictCard creditCards;
 
     /**
-     * Metodo Constructor de la clase Customer que extiende los atributos de person y recibe como parametro:
+     * Metodo Constructor de la clase Customer que extiende los atributos de
+     * person y recibe como parametro:
+     *
      * @param invoices
      * @param shipping
      * @param creditCards
@@ -28,6 +31,7 @@ public class Customer extends Person {
 
     /**
      * getter de invoices
+     *
      * @return invoices
      */
     public Invoice getInvoices() {
@@ -36,6 +40,7 @@ public class Customer extends Person {
 
     /**
      * Setter del invoices recibe como parametro:
+     *
      * @param invoices
      */
     public void setInvoices(Invoice invoices) {
@@ -44,6 +49,7 @@ public class Customer extends Person {
 
     /**
      * getter de shipping
+     *
      * @return shipping
      */
     public Location getShipping() {
@@ -52,6 +58,7 @@ public class Customer extends Person {
 
     /**
      * Setter del shipping recibe como parametro:
+     *
      * @param shipping
      */
     public void setShipping(Location shipping) {
@@ -60,6 +67,7 @@ public class Customer extends Person {
 
     /**
      * getter de creditCards
+     *
      * @return creditCards
      */
     public CredictCard getCreditCards() {
@@ -68,6 +76,7 @@ public class Customer extends Person {
 
     /**
      * Setter del creditCards recibe como parametro:
+     *
      * @param creditCards
      */
     public void setCreditCards(CredictCard creditCards) {
@@ -75,22 +84,24 @@ public class Customer extends Person {
     }
 
     /**
-     * Metodo To string 
+     * Metodo To string
+     *
      * @return un string con la informacion de la clase
      */
     @Override
     public String toString() {
         return "Customer{" + "invoices=" + invoices + ", shipping=" + shipping + ", creditCards=" + creditCards + '}';
     }
-    
+
     /**
-     * Metodo biometricValidation que sirva para validar la persona y retorna un boolean
-     * @return boolean 
+     * Metodo biometricValidation que sirva para validar la persona y retorna un
+     * boolean
+     *
+     * @return boolean
      */
     @Override
     public boolean biometricValidation() {
-        return super.biometricValidation(); 
+        return super.biometricValidation();
     }
-    
-    
+
 }

@@ -1,10 +1,13 @@
 package Taller;
 
 public class StandardPackage extends Package {
+
     public float quota;
 
     /**
-     * Constructor de Standardpackage que extiende los atributos de package y recibe como parametro:
+     * Constructor de Standardpackage que extiende los atributos de package y
+     * recibe como parametro:
+     *
      * @param quota
      * @param id
      * @param description
@@ -18,9 +21,10 @@ public class StandardPackage extends Package {
         super(id, description, code, gramsPrice, basePrice, weight, customer);
         this.quota = quota;
     }
-    
+
     /**
      * Getter de Quota
+     *
      * @return quota
      */
     public float getQuota() {
@@ -29,6 +33,7 @@ public class StandardPackage extends Package {
 
     /**
      * setter de Quota que recibe como parametro:
+     *
      * @param quota
      */
     public void setQuota(float quota) {
@@ -36,7 +41,8 @@ public class StandardPackage extends Package {
     }
 
     /**
-     * Metodo To string 
+     * Metodo To string
+     *
      * @return un string con la informacion de la clase
      */
     @Override
@@ -46,13 +52,14 @@ public class StandardPackage extends Package {
 
     /**
      * Metodo calculate recibe como parametro:
+     *
      * @param a
      * @param b
      * @param c
      * @return un float con el valor a pagar
      */
     public float calculate(float a, float b, float c) {
-        return (a*b)+c;
+        return (a * b) + c;
     }
-    
+
 }

@@ -1,6 +1,7 @@
 package Taller;
 
 public class Track {
+
     public String id;
     public float maxWeight, currentWeight;
     public TrackType type;
@@ -8,6 +9,7 @@ public class Track {
 
     /**
      * Metodo Constructor de la clase track recibe como parametro:
+     *
      * @param id
      * @param maxWeight
      * @param currentWeight
@@ -24,6 +26,7 @@ public class Track {
 
     /**
      * getter de id
+     *
      * @return id
      */
     public String getId() {
@@ -32,6 +35,7 @@ public class Track {
 
     /**
      * Setter del id recibe como parametro:
+     *
      * @param id
      */
     public void setId(String id) {
@@ -40,6 +44,7 @@ public class Track {
 
     /**
      * getter de maxWeight
+     *
      * @return maxWeight
      */
     public float getMaxWeight() {
@@ -48,6 +53,7 @@ public class Track {
 
     /**
      * Setter del maxWeight recibe como parametro:
+     *
      * @param maxWeight
      */
     public void setMaxWeight(float maxWeight) {
@@ -56,6 +62,7 @@ public class Track {
 
     /**
      * getter de currentWeight
+     *
      * @return currentWeight
      */
     public float getCurrentWeight() {
@@ -64,6 +71,7 @@ public class Track {
 
     /**
      * Setter del currentWeight recibe como parametro:
+     *
      * @param currentWeight
      */
     public void setCurrentWeight(float currentWeight) {
@@ -72,6 +80,7 @@ public class Track {
 
     /**
      * getter de type
+     *
      * @return type
      */
     public TrackType getType() {
@@ -80,6 +89,7 @@ public class Track {
 
     /**
      * Setter del type recibe como parametro:
+     *
      * @param type
      */
     public void setType(TrackType type) {
@@ -88,6 +98,7 @@ public class Track {
 
     /**
      * getter de status
+     *
      * @return status
      */
     public TrackStatus getStatus() {
@@ -96,6 +107,7 @@ public class Track {
 
     /**
      * Setter del status recibe como parametro:
+     *
      * @param status
      */
     public void setStatus(TrackStatus status) {

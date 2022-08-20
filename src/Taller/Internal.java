@@ -1,11 +1,14 @@
 package Taller;
 
 public class Internal extends Person {
+
     public Role role;
     private BankAccount account;
 
     /**
-     * Metodo Constructor de la clase Internal que extiende los atributos de person y recibe como parametro:
+     * Metodo Constructor de la clase Internal que extiende los atributos de
+     * person y recibe como parametro:
+     *
      * @param role
      * @param account
      * @param id
@@ -25,6 +28,7 @@ public class Internal extends Person {
 
     /**
      * getter de role
+     *
      * @return role
      */
     public Role getRole() {
@@ -33,6 +37,7 @@ public class Internal extends Person {
 
     /**
      * Setter del role recibe como parametro:
+     *
      * @param role
      */
     public void setRole(Role role) {
@@ -41,6 +46,7 @@ public class Internal extends Person {
 
     /**
      * getter de account
+     *
      * @return account
      */
     public BankAccount getAccount() {
@@ -49,6 +55,7 @@ public class Internal extends Person {
 
     /**
      * Setter del account recibe como parametro:
+     *
      * @param account
      */
     public void setAccount(BankAccount account) {
@@ -56,8 +63,10 @@ public class Internal extends Person {
     }
 
     /**
-     * Metodo biometricValidation que sirva para validar la persona y retorna un boolean
-     * @return boolean 
+     * Metodo biometricValidation que sirva para validar la persona y retorna un
+     * boolean
+     *
+     * @return boolean
      */
     @Override
     public boolean biometricValidation() {
@@ -65,7 +74,8 @@ public class Internal extends Person {
     }
 
     /**
-     * Metodo To string 
+     * Metodo To string
+     *
      * @return un string con la informacion de la clase
      */
     @Override

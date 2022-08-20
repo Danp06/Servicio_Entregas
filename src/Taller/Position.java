@@ -2,13 +2,16 @@ package Taller;
 
 /**
  * Clase para conocer la posicion de los envios
+ *
  * @author danie
  */
 public class Position {
+
     public float lat, ing;
 
     /**
-     *Constructor de la Clase Position que recibe como parametro 
+     * Constructor de la Clase Position que recibe como parametro
+     *
      * @param lat Latitud
      * @param ing Longitud
      */
@@ -19,6 +22,7 @@ public class Position {
 
     /**
      * Getter de la latitud
+     *
      * @return
      */
     public float getLat() {
@@ -27,14 +31,16 @@ public class Position {
 
     /**
      * Setter de lat recibe como parametro:
-     * @param lat 
+     *
+     * @param lat
      */
     public void setLat(float lat) {
         this.lat = lat;
     }
 
     /**
-     *Getter de la longitud
+     * Getter de la longitud
+     *
      * @return
      */
     public float getIng() {
@@ -43,6 +49,7 @@ public class Position {
 
     /**
      * Setter de ing recibe como parametro:
+     *
      * @param ing
      */
     public void setIng(float ing) {
@@ -50,13 +57,13 @@ public class Position {
     }
 
     /**
-     * Metodo To string 
+     * Metodo To string
+     *
      * @return un string con la informacion de la clase
      */
     @Override
     public String toString() {
         return "Position{" + "lat=" + lat + ", ing=" + ing + '}';
     }
-    
-    
+
 }

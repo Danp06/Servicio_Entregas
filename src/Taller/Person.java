@@ -1,13 +1,14 @@
 package Taller;
 
-
 public abstract class Person {
-    public String id, nationalId,idType, name, email, lastName;
+
+    public String id, nationalId, idType, name, email, lastName;
     public Location location;
     public PersonType personType;
 
     /**
      * Metodo Constructor de la clase Package recibe como parametro:
+     *
      * @param id
      * @param nationalId
      * @param idType
@@ -30,6 +31,7 @@ public abstract class Person {
 
     /**
      * getter de id
+     *
      * @return id
      */
     public String getId() {
@@ -38,6 +40,7 @@ public abstract class Person {
 
     /**
      * Setter del id recibe como parametro:
+     *
      * @param id
      */
     public void setId(String id) {
@@ -46,6 +49,7 @@ public abstract class Person {
 
     /**
      * getter de nationalId
+     *
      * @return nationalId
      */
     public String getNationalId() {
@@ -54,6 +58,7 @@ public abstract class Person {
 
     /**
      * Setter del nationalId recibe como parametro:
+     *
      * @param nationalId
      */
     public void setNationalId(String nationalId) {
@@ -62,6 +67,7 @@ public abstract class Person {
 
     /**
      * getter de idType
+     *
      * @return idType
      */
     public String getIdType() {
@@ -70,6 +76,7 @@ public abstract class Person {
 
     /**
      * Setter del idType recibe como parametro:
+     *
      * @param idType
      */
     public void setIdType(String idType) {
@@ -78,6 +85,7 @@ public abstract class Person {
 
     /**
      * getter de name
+     *
      * @return name
      */
     public String getName() {
@@ -86,6 +94,7 @@ public abstract class Person {
 
     /**
      * Setter del name recibe como parametro:
+     *
      * @param name
      */
     public void setName(String name) {
@@ -94,6 +103,7 @@ public abstract class Person {
 
     /**
      * getter de email
+     *
      * @return email
      */
     public String getEmail() {
@@ -102,6 +112,7 @@ public abstract class Person {
 
     /**
      * Setter del email recibe como parametro:
+     *
      * @param email
      */
     public void setEmail(String email) {
@@ -110,6 +121,7 @@ public abstract class Person {
 
     /**
      * getter de lastName
+     *
      * @return lastName
      */
     public String getLastName() {
@@ -118,6 +130,7 @@ public abstract class Person {
 
     /**
      * Setter del lastName recibe como parametro:
+     *
      * @param lastName
      */
     public void setLastName(String lastName) {
@@ -126,6 +139,7 @@ public abstract class Person {
 
     /**
      * getter de location
+     *
      * @return location
      */
     public Location getLocation() {
@@ -134,6 +148,7 @@ public abstract class Person {
 
     /**
      * Setter del location recibe como parametro:
+     *
      * @param location
      */
     public void setLocation(Location location) {
@@ -142,6 +157,7 @@ public abstract class Person {
 
     /**
      * getter de personType
+     *
      * @return personType
      */
     public PersonType getPersonType() {
@@ -150,6 +166,7 @@ public abstract class Person {
 
     /**
      * Setter del personType recibe como parametro:
+     *
      * @param personType
      */
     public void setPersonType(PersonType personType) {
@@ -157,21 +174,24 @@ public abstract class Person {
     }
 
     /**
-     * Metodo To string 
+     * Metodo To string
+     *
      * @return un string con la informacion de la clase
      */
     @Override
     public String toString() {
         return "Person{" + "id=" + id + ", nationalId=" + nationalId + ", idType=" + idType + ", name=" + name + ", email=" + email + ", lastName=" + lastName + ", location=" + location + ", personType=" + personType + '}';
     }
-    
+
     /**
-     * Metodo biometricValidation que sirva para validar la persona y retorna un boolean
-     * @return boolean 
+     * Metodo biometricValidation que sirva para validar la persona y retorna un
+     * boolean
+     *
+     * @return boolean
      */
-    public boolean biometricValidation(){
+    public boolean biometricValidation() {
         boolean validated = false;
         return validated;
     }
-    
+
 }

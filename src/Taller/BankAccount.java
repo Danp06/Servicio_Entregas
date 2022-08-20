@@ -1,11 +1,12 @@
 package Taller;
 
-
 public class BankAccount {
+
     public String accountId, bankName, bankId;
 
     /**
      * Metodo Constructor de la clase BanckAccount recibe como parametro:
+     *
      * @param accountId
      * @param bankName
      * @param bankId
@@ -18,6 +19,7 @@ public class BankAccount {
 
     /**
      * Getter de accountId
+     *
      * @return accountId
      */
     public String getAccountId() {
@@ -26,6 +28,7 @@ public class BankAccount {
 
     /**
      * Setter del accountId recibe como parametro:
+     *
      * @param accountId
      */
     public void setAccountId(String accountId) {
@@ -34,6 +37,7 @@ public class BankAccount {
 
     /**
      * getter bankName
+     *
      * @return bankName
      */
     public String getBankName() {
@@ -42,6 +46,7 @@ public class BankAccount {
 
     /**
      * Setter del bankName recibe como parametro:
+     *
      * @param bankName
      */
     public void setBankName(String bankName) {
@@ -50,6 +55,7 @@ public class BankAccount {
 
     /**
      * getter de bankId
+     *
      * @return bankId
      */
     public String getBankId() {
@@ -58,6 +64,7 @@ public class BankAccount {
 
     /**
      * Setter del bankId recibe como parametro:
+     *
      * @param bankId
      */
     public void setBankId(String bankId) {
@@ -65,20 +72,22 @@ public class BankAccount {
     }
 
     /**
-     * Metodo To string 
+     * Metodo To string
+     *
      * @return un string con la informacion de la clase
      */
     @Override
     public String toString() {
         return "BankAccount{" + "accountId=" + accountId + ", bankName=" + bankName + ", bankId=" + bankId + '}';
     }
-    
+
     /**
      * Metodo deposit recibe como parametro
+     *
      * @param amount
-     * @return un boolean 
+     * @return un boolean
      */
-    public boolean deposit(float amount){
+    public boolean deposit(float amount) {
         boolean deposited = false;
         return deposited;
     }

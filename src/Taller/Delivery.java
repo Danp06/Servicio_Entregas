@@ -1,6 +1,7 @@
 package Taller;
 
 public class Delivery {
+
     public Order order;
     public DeliveryStatus status;
     public Track track;
@@ -9,6 +10,7 @@ public class Delivery {
 
     /**
      * Metodo Constructor de la clase Delivery recibe como parametro:
+     *
      * @param order
      * @param status
      * @param track
@@ -25,6 +27,7 @@ public class Delivery {
 
     /**
      * ggeter order
+     *
      * @return order
      */
     public Order getOrder() {
@@ -33,6 +36,7 @@ public class Delivery {
 
     /**
      * Setter de order recibe como parametro:
+     *
      * @param order
      */
     public void setOrder(Order order) {
@@ -41,6 +45,7 @@ public class Delivery {
 
     /**
      * getter de status
+     *
      * @return status
      */
     public DeliveryStatus getStatus() {
@@ -49,6 +54,7 @@ public class Delivery {
 
     /**
      * Setter de status recibe como parametro:
+     *
      * @param status
      */
     public void setStatus(DeliveryStatus status) {
@@ -57,6 +63,7 @@ public class Delivery {
 
     /**
      * getter de track
+     *
      * @return track
      */
     public Track getTrack() {
@@ -65,6 +72,7 @@ public class Delivery {
 
     /**
      * Setter de track recibe como parametro:
+     *
      * @param track
      */
     public void setTrack(Track track) {
@@ -73,6 +81,7 @@ public class Delivery {
 
     /**
      * getter de driver
+     *
      * @return driver
      */
     public Internal getDriver() {
@@ -81,6 +90,7 @@ public class Delivery {
 
     /**
      * Setter de driver recibe como parametro:
+     *
      * @param driver
      */
     public void setDriver(Internal driver) {
@@ -89,6 +99,7 @@ public class Delivery {
 
     /**
      * getter de position
+     *
      * @return position
      */
     public Position getPosition() {
@@ -97,41 +108,45 @@ public class Delivery {
 
     /**
      * Setter de position recibe como parametro:
+     *
      * @param position
      */
     public void setPosition(Position position) {
         this.position = position;
     }
-    
+
     /**
-     *getter de watchPositon
+     * getter de watchPositon
+     *
      * @return coor
      */
-    public Position watchPositon(){
+    public Position watchPositon() {
         Position coor = null;
         return coor;
     }
-    
+
     /**
      * getter de CurrentPosition
+     *
      * @return coor
      */
-    public Position getCurrentPosition(){
+    public Position getCurrentPosition() {
         Position coor = null;
         return coor;
     }
-    
-    private void setCurrentPosition(Position position){
+
+    private void setCurrentPosition(Position position) {
         this.position = position;
     }
 
     /**
-     * Metodo To string 
+     * Metodo To string
+     *
      * @return un string con la informacion de la clase
      */
     @Override
     public String toString() {
         return "Delivery{" + "order=" + order + ", status=" + status + ", track=" + track + ", driver=" + driver + ", position=" + position + '}';
     }
-    
+
 }
